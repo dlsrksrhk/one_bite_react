@@ -1,8 +1,17 @@
+import "./Main.css";
+
 const Main = () => {
+    const user = {
+        name: 'Juan',
+        isLogin: true
+    };
+
+    if (user.isLogin) {
+        return <div className="logout">로그아웃</div>
+    }
+
     return (
-        <div>
-            <h1>Main</h1>
-        </div>
+        <div>로그인하기</div>
     )
 }
 
